@@ -15,3 +15,5 @@ SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 
 PROMPT='%F{green}%n%f %d %F{yellow}$ %F{white}'
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
