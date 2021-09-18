@@ -1,6 +1,6 @@
 " All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
 " /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
-" you can find below.  If you wish to change any of those settings, you should
+" you can find below.  If yot
 " do it in this file (/etc/vimrc), since archlinux.vim will be overwritten
 " everytime an upgrade of the vim packages is performed.  It is recommended to
 " make changes after sourcing archlinux.vim since it alters the value of the
@@ -17,6 +17,18 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
+
+" Plugins
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'            " Project and file navigation
+call plug#end()
+
+set clipboard+=unnamedplus
+
 set expandtab
 set smarttab
 set tabstop=4
@@ -32,3 +44,10 @@ set smartcase
 set hlsearch
 
 set encoding=utf8
+
+" Nerdtree shortcuts
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
