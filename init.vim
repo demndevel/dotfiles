@@ -15,8 +15,9 @@ runtime! archlinux.vim
 " and configure vim to your own liking!
 
 " do not load defaults if ~/.vimrc is missing
-"let skip_defaults_vim=1
-
+" let skip_defaults_vim=1
+" install plugins at ~/.local/share/nvim/site/autoload
+" for clipboard: sudo pacman -S xclip
 
 " Plugins
 if empty(glob("~/.vim/autoload/plug.vim"))
@@ -25,6 +26,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'            " Project and file navigation
+Plug 'fatih/vim-go'                  " Go autocomplete
 call plug#end()
 
 set clipboard+=unnamedplus
