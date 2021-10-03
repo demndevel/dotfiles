@@ -1,5 +1,5 @@
 ==== xfce mars theme =====
-
+-------------
 reddit [https://www.reddit.com/r/unixporn/comments/ptxf5n/xfce_mars_theme_o/]
 
 Background: Deviantart link
