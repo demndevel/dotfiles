@@ -1,0 +1,6 @@
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+# End of lines configured by zsh-newuser-install
+
+PROMPT='%F{green}%n%f %d %F{yellow}$ %F{white}'
