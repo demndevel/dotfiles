@@ -11,3 +11,5 @@ configure powerlevel10k - p10k configure
 
 
 prompt without p10k:  ```PROMPT='%F{green}%n%f %d %F{yellow}$ %F{white}'```
+
+set zsh as default: ```chsh -s $(which zsh)```
