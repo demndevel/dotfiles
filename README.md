@@ -15,4 +15,5 @@ prompt without p10k:  ```PROMPT='%F{green}%n%f %d %F{yellow}$ %F{white}'```
 set zsh as default: ```chsh -s $(which zsh)```
 
 my theme (demns.zsh-theme): <br>
-![image](https://user-images.githubusercontent.com/69032700/161422232-1bd73558-9ca1-4bcd-b46c-56e24c630542.png)
+![image](https://user-images.githubusercontent.com/69032700/161432897-de390766-2761-490d-ad16-6457af881ba6.png)
+
