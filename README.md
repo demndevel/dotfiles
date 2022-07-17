@@ -17,3 +17,9 @@ set zsh as default: ```chsh -s $(which zsh)```
 my theme (demns.zsh-theme): <br>
 ![image](https://user-images.githubusercontent.com/69032700/161432897-de390766-2761-490d-ad16-6457af881ba6.png)
 
+
+## Neovim
+
+Run this ```curl -fLo ~/.config/nvim/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim```
+and put init.vim file to the ```~/.config/nvim``` directory
