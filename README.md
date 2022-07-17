@@ -22,4 +22,4 @@ my theme (demns.zsh-theme): <br>
 
 Run this ```curl -fLo ~/.config/nvim/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim```
-and put init.vim file to the ```~/.config/nvim``` directory
+and put [init.vim](https://git.io/JzYut) file to the ```~/.config/nvim``` directory
