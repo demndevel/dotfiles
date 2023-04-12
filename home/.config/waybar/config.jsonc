@@ -8,20 +8,18 @@
     "height": 0,
     "modules-left": [
         "clock",
-        // "cpu",
-        // "memory",
+        "cpu",
+        "memory",
         "custom/weather",
         "wlr/workspaces"
     ],
-    "modules-center": ["hyprland/window"],
+    //"modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
         "custom/updates",
-        // "custom/language",
         "pulseaudio",
         "pulseaudio#microphone"
     ],
-
     "hyprland/window": {
         "format": "{}"
     },
@@ -42,29 +40,29 @@
             "default": ""
           }
     },
-    // "cpu": {
-    //     "interval": 10,
-    //     "format": " {}%",
-    //     "max-length": 10,
-    //     "on-click": ""
-    // },
-    // "memory": {
-    //     "interval": 30,
-    //     "format": " {}%",
-    //     "format-alt":" {used:0.1f}G",
-    //     "max-length": 10
-    // },
+    "cpu": {
+        "interval": 10,
+        "format": "💻 {}%",
+        "max-length": 10,
+        "on-click": ""
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt":" {used:0.1f}G",
+        "max-length": 10
+    },
     "custom/updates": {
         "exec": "(paru -Qua) | wc -l",
         "interval": 7200,
         "format": " {}"
     },
-    // "custom/language": {
-    //     "exec": "cat /tmp/kb_layout",
-    //     "interval": 3,
-    //     "format": " {}",
-    //     "tooltip": false
-    // },
+    "custom/language": {
+        "exec": "cat /tmp/kb_layout",
+        "interval": 3,
+        "format": " {}",
+        "tooltip": false
+    },
     "custom/weather" : {
         "tooltip" : true,
         "format" : "{}",
@@ -102,8 +100,8 @@
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "tooltip": false,
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
+        "format-source": "V{volume}%",
+        "format-source-muted": " Muted",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
