@@ -1,5 +1,4 @@
 # configs
-ok configs
 
 zshrc - https://git.io/JzTrL <br>
 init.vim - https://git.io/JzYut <br>
@@ -28,4 +27,8 @@ and put [init.vim](https://git.io/JzYut) file to the ```~/.config/nvim``` direct
 4. Install demns.zsh-theme
 5. Set zsh as default: ```chsh -s $(which zsh)```
 ## Pacman 
+
 In ```/etc/pacman.conf``` remove '#' in line with Color
+
+## Tiled stuff
+
